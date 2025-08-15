@@ -1,0 +1,140 @@
+  
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        .slide-enter-active, .slide-leave-active {
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        .slide-enter-from {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        .slide-leave-to {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity 0.3s;
+        }
+        .fade-enter-from, .fade-leave-to {
+            opacity: 0;
+        }
+
+
+.hero-header{
+  background-image: url('../../assets/img/carousel-1.jpg');
+}
+
+
+ /* Animate fadeInUp - simple keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Facility icon container */
+.facility-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 9999px;
+  transition: background 0.5s ease;
+  z-index: 5;
+}
+
+.facility-item:hover .facility-icon::before {
+  background: transparent;
+}
+
+/* The small side spans on icon */
+.facility-icon-span {
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  top: 0;
+  border-radius: 50%;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.facility-icon-span.left-0 {
+  left: 0;
+}
+
+.facility-icon-span.right-0 {
+  right: 0;
+}
+
+/* Facility text container */
+.facility-text::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 9999px;
+  transition: background 0.5s ease;
+  z-index: 5;
+}
+
+.facility-item:hover .facility-text::before {
+  background: transparent;
+}
+
+/* Ensure inner text and icons are above overlays */
+.facility-item > * * {
+  position: relative;
+  z-index: 10;
+}
+
+/* Color transition for all children */
+.facility-item * {
+  transition: color 0.5s;
+}
+
+/* On hover, text and icons become white */
+.facility-item:hover * {
+  color: #fff !important;
+}
+.about-img img {
+  background-color: #fff5f3;
+ 
+    transition: .5s;
+}
+
+.about-img img:hover {
+    background: #fe5d37 !important;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*   */

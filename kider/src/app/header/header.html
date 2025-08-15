@@ -1,0 +1,101 @@
+<nav class="sticky top-0 z-50 bg-white px-4 py-3 shadow-sm lg:px-6 lg:py-0" dir="rtl">
+  <div class="flex items-center justify-between">
+    <!-- Brand Logo -->
+    <a class="flex items-center">
+      <h1 class="m-0 text-xl font-bold text-[#fe5d37] md:text-2xl">
+        <i class="mr-3 fa fa-book-reader ml-3 "></i>كيدي
+      </h1>
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-button" class="block p-2 md:hidden">
+      <svg class="w-6 h-6 text-[#fe5d37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7"
+        ></path>
+      </svg>
+    </button>
+
+    <!-- Navigation Menu -->
+    <div id="navbar-menu" class="hidden w-full md:block md:w-auto">
+      <div class="flex flex-col items-center py-4 md:flex-row md:space-x-8 md:py-0">
+        <!-- Navigation Links -->
+        <a href="index.html" class="w-full py-2 font-bold text-[#fe5d37] md:w-auto md:py-5 ml-3"
+          >الرئيسية</a
+        >
+        <a
+          href="about.html"
+          class="w-full font-bold py-2 text-gray-700 hover:text-[#fe5d37] md:w-auto md:py-5 ml-3"
+          >من نحن</a
+        >
+        <a
+          href="classes.html"
+          class="w-full py-2 font-bold text-gray-700 hover:text-[#fe5d37] md:w-auto md:py-5"
+          >الفصول</a
+        >
+
+        <!-- Dropdown -->
+        <div class="relative w-full group md:w-auto">
+          <button
+            class="flex items-center justify-between font-bold w-full py-2 text-gray-700 hover:text-[#fe5d37] md:w-auto md:py-5 md:inline-flex"
+          >
+            الصفحات
+            <svg
+              class="w-4 h-4 ml-1 transition-transform duration-200 md:group-hover:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Dropdown Menu -->
+          <div
+            class="absolute right-0 z-40 w-56 py-1 mt-1 origin-top-right bg-white rounded-md shadow-lg opacity-0 invisible transition-all duration-300 transform -translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 md:mt-0"
+          >
+            <a href="facility.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-bold"
+              >مرافق المدرسة</a
+            >
+            <a href="team.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-bold"
+              >المعلمون المشهورون</a
+            >
+            <a href="call-to-action.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-bold"
+              >كن معلماً</a
+            >
+            <a href="appointment.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-bold"
+              >حدد موعدًا</a
+            >
+            <a href="testimonial.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-bold"
+              >آراء الطلاب</a
+            >
+            <a href="404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-bold">خطأ 404</a>
+          </div>
+        </div>
+
+        <a
+          href="contact.html"
+          class="w-full py-2 font-bold text-gray-700 hover:text-[#fe5d37] md:w-auto md:py-5"
+          >اتصل بنا</a
+        >
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <a
+      href="#"
+      class="hidden items-center bg-[#fe5d37] text-white rounded-full px-4 py-2   transition-colors duration-300 lg:inline-flex"
+    >
+      انضم إلينا
+      <i class="ml-3 fa fa-arrow-left mr-2"></i>
+    </a>
+  </div>
+</nav>
