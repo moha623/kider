@@ -25,6 +25,8 @@
               }
             ],
             "styles": [
+              "@ngxpert/hot-toast/styles.css",
+              "@ngxpert/hot-toast/styles.css",
               "src/styles.css"
             ],
             "server": "src/main.server.ts",

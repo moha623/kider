@@ -1,17 +1,17 @@
-import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
+
 
 export const environment = {
   production: false,
   firebase: {
+    projectId: 'kider-faf82',
+    appId: '1:359843086115:web:59390653f04a029b865696',
+    storageBucket: 'kider-faf82.firebasestorage.app',
     apiKey: 'AIzaSyCneBFspePcMU6uvsK1sM_gut8yx00LskY',
     authDomain: 'kider-faf82.firebaseapp.com',
-    projectId: 'kider-faf82',
-    storageBucket: 'kider-faf82.firebasestorage.app',
     messagingSenderId: '359843086115',
-    appId: '1:359843086115:web:59390653f04a029b865696',
     measurementId: 'G-WMLXJ2EQEV',
   },
+  // other environment settings
 };
 // Import the functions you need from the SDKs you need
 
@@ -20,7 +20,3 @@ export const environment = {
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-
-// Initialize Firebase
-const app = initializeApp(environment.firebase);
-const analytics = getAnalytics(app);

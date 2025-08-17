@@ -1,33 +1,10 @@
-  
-        body {
-            font-family: 'Nunito', sans-serif;
-        }
-        
-        .slide-enter-active, .slide-leave-active {
-            transition: opacity 0.5s, transform 0.5s;
-        }
-        .slide-enter-from {
-            opacity: 0;
-            transform: translateX(100%);
-        }
-        .slide-leave-to {
-            opacity: 0;
-            transform: translateX(-100%);
-        }
-        .fade-enter-active, .fade-leave-active {
-            transition: opacity 0.3s;
-        }
-        .fade-enter-from, .fade-leave-to {
-            opacity: 0;
-        }
-
-
-.hero-header{
+.hero-header {
   background-image: url('../../assets/img/carousel-1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
- /* Animate fadeInUp - simple keyframes */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -46,9 +23,8 @@
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Facility icon container */
 .facility-icon::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.9);
@@ -61,11 +37,10 @@
   background: transparent;
 }
 
-/* The small side spans on icon */
 .facility-icon-span {
   position: absolute;
-  width: 15px;
-  height: 30px;
+  width: 20px;
+  height: 35px;
   top: 0;
   border-radius: 50%;
   opacity: 0.8;
@@ -80,9 +55,8 @@
   right: 0;
 }
 
-/* Facility text container */
 .facility-text::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.9);
@@ -95,29 +69,25 @@
   background: transparent;
 }
 
-/* Ensure inner text and icons are above overlays */
 .facility-item > * * {
-  position: relative;
   z-index: 10;
 }
 
-/* Color transition for all children */
 .facility-item * {
   transition: color 0.5s;
 }
 
-/* On hover, text and icons become white */
 .facility-item:hover * {
   color: #fff !important;
 }
 .about-img img {
   background-color: #fff5f3;
- 
-    transition: .5s;
+
+  transition: 0.5s;
 }
 
 .about-img img:hover {
-    background: #fe5d37 !important;
+  background: #fe5d37 !important;
 }
 @keyframes fadeInUp {
   0% {
@@ -136,5 +106,3 @@
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/*   */
